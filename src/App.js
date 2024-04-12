@@ -57,7 +57,7 @@ const quality = [1,2,3,4,5]
       <div className="image-container">
         {images.map((image1, index) => (
           <div key={index} className="image-card">
-            <img src={image1.url} alt={`Image ${index}`} />
+            <img src={image1.url} alt={`${index}`} />
             <div className="rating-container">
               <span>Rate this image:</span>
               {quality.map((rating) => (
