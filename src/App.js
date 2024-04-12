@@ -79,7 +79,7 @@ const quality = [1,2,3,4,5]
         ))}
       </div>
       <button onClick={handleSaveData}>Next</button>
-      <button onClick={ghandleSaveData}>Save Data</button>
+      <button onClick={handleSaveData}>Save Data</button>
     </div>
   );
 }
