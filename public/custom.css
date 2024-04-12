@@ -1,0 +1,66 @@
+/* public/custom.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+  }
+  
+  .App {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  .image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .image-card {
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .image-card img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  
+  .rating-container {
+    margin-top: 10px;
+  }
+  
+  .rating-container span {
+    margin-right: 10px;
+  }
+  
+  .rating-container button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .rating-container button.active {
+    background-color: #007bff;
+    color: #fff;
+  }
+  textarea {
+    width: 100%;
+    margin-top: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
