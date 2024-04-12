@@ -55,16 +55,16 @@ const quality = [1,2,3,4,5]
     <div className="App">
       <h1>Image Rating App</h1>
       <div className="image-container">
-        {images.map((image, index) => (
+        {images.map((image1, index) => (
           <div key={index} className="image-card">
-            <img src={image.url} alt={`Image ${index}`} />
+            <img src={image1.url} alt={`Image ${index}`} />
             <div className="rating-container">
               <span>Rate this image:</span>
               {quality.map((rating) => (
                 <button
                   key={rating}
-                  onClick={() => handleRatingChange(image.id, rating)}
-                  className={ratings[image.id] === rating ? 'active' : ''}
+                  onClick={() => handleRatingChange(image1.id, rating)}
+                  className={ratings[image1.id] === rating ? 'active' : ''}
                 >
                   {rating}
                 </button>
@@ -72,8 +72,8 @@ const quality = [1,2,3,4,5]
             </div>
             <textarea
               placeholder="Add a comment..."
-              value={comments[image.id] || ''}
-              onChange={(e) => handleCommentChange(image.id, e.target.value)}
+              value={comments[image1.id] || ''}
+              onChange={(e) => handleCommentChange(image1.id, e.target.value)}
             ></textarea>
           </div>
         ))}
